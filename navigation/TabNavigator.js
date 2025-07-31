@@ -31,12 +31,12 @@ export default function BottomTabNavigator() {
                 }} 
             />
             <Tab.Screen 
-                name="Contato" 
+                name="Jogadores" 
                 component={Tab3} 
                 options={{ 
                     headerShown: false,
                     tabBarIcon: ({ color, size }) => (
-                        <Ionicons name="call" color={color} size={size} />
+                        <Ionicons name="people" color={color} size={size} />
                     ),
                 }} 
             />

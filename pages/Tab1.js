@@ -1,15 +1,27 @@
-import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, StyleSheet } from "react-native";
 import Card from "../components/Card";
-import ContatoCard from "../components/ContatoCard";
+import ContatoCard from "../components/ContatoCard"; 
+import CardSkeleton from "../components/CardSkeleton";
 
 export default function Home() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 2000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <View style={styles.container}>
-            <ContatoCard 
-                name="Sport Club Corinthians Paulista"
-                bio="Esse app é dedicado a história de um time esportivo que é um dos maiores do Brasil e do mundo. Aqui você encontrará informações sobre os títulos conquistados, a história do clube e muito mais."
-            />
+            {loading ? (
+                <CardSkeleton />
+            ) : (
+                <ContatoCard 
+                    name="Sport Club Corinthians Paulista"
+                    bio="Esse app é dedicado à história de um time esportivo que é um dos maiores do Brasil e do mundo..."
+                />
+            )}
             <Card />
         </View>
     );
@@ -20,18 +32,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#ffffffff",
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: "bold",
-        marginBottom: 10,
-    },
-    description: {
-        fontSize: 16,
-        color: "#333",
-        textAlign: "center",
-        marginBottom: 20,
-        paddingHorizontal: 20,
+        backgroundColor: "#fff",
     },
 });

@@ -9,11 +9,65 @@ export default function Card() {
                 <View style={styles.card}>
                     <Text style={styles.cardText}></Text>
                     <Image 
-                        source={require('../assets/tacaBrasileiro.png')}
+                        source={require('../assets/yuri.png')}
                         style={styles.image} 
                         resizeMode="contain"
                     />
-                    <Text style={styles.textCard}>Campeonato Brasileiro</Text>
+                    <Text style={styles.textCard}>Yuri Alberto</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/garro.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>Rodrigo Garro</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/memphis.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>Memphis Depay</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/HugoSouza.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>Hugo Souza</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/carrilo.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>André Carrilo</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/martinez.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>José Martinez</Text>
+                </View>
+                <View style={styles.card}>
+                    <Text style={styles.cardText}></Text>
+                    <Image 
+                        source={require('../assets/matheuzinho.png')}
+                        style={styles.image} 
+                        resizeMode="contain"
+                    />
+                    <Text style={styles.textCard}>Matheuzinho</Text>
                 </View>
             </ScrollView>
         </SafeAreaView>
