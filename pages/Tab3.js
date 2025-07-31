@@ -10,7 +10,7 @@ export default function Profile() {
                 Fale conosco! Estamos sempre prontos para atender a Fiel Torcida.
             </Text>
             <ContatoCard 
-                name="Sport Club Corunthians Paulista"
+                name="Sport Club Corinthians Paulista"
                 email="contato@sccp.com.br"
                 contato="(11) 1234-5678"
                 bio="Time de futebol brasileiro com sede em São Paulo. Fundado em 1910, é um dos clubes mais populares do Brasil, conhecido por sua grande torcida e conquistas nacionais e internacionais."
